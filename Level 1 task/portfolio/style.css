@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(60, 57, 57);
+    color: white;
+    font-family: sans-serif;
+}
+/* CSS applied to Navigation Menu & Logo */
+.navigation{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #4e4545;
+}
+.logo{
+    display: flex;
+    margin: 10px 50px;
+}
+.logo h1{
+    font-size: 35px;
+    color: rgba(20, 238, 209, 0.815);
+    border: 4px ridge white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 20px 1px;
+    text-shadow: 0 0 0.1em #16edcf;
+}
+.logo span{
+    line-height: 70px;
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 2.2px;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    margin: 34px 50px;
+    transition: 0.7s ease-in-out;
+}
+.navbar li img{
+    display: none;
+}
+.navbar li a{
+    margin: 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: #16edcf;
+    border-bottom: 1px solid #16eda5;
+}
+.menu_icon{
+    margin: 30px 10px;
+    line-height: 30px;
+    font-size: 30px;
+    display: none;
+}
+/* CSS Applied to Short Intro and Profile Section */
+.profile{
+    margin-top: 100px;
+}
+.intro{
+    width: 282px;
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    border-radius: 40px;
+    background-image: linear-gradient(to right,#3838e3,#2e8eb5);
+    transition: all 0.5s ease-in-out infinite;
+    z-index: -1;
+    animation-duration: 2s;
+}
+.intro span{
+    font-size: 50px;
+    text-shadow: 0px 0px 0.1em orange;
+}
+.intro p{
+    font-size: 40px;
+    text-shadow: 2px 3px 3px orange;
+}
+/* CSS applied to About Section */
+.introd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 100px;
+}
+.pro-pic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.introd_content{
+    width: 320px;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.about_head h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-color: #16edcf;
+    -webkit-text-stroke-width: 2.5px;
+}
+.about_content{
+    text-align: center;
+}
+.about_content p{
+    margin: 30px 184px;
+    font-size: 20px;
+}
+.about_content ul li{
+    padding: 5px;
+}
+.about_content h2{
+    margin-bottom: 10px;
+}
+.contact_header h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-color: #16edcf;
+    -webkit-text-stroke-width: 2.5px;
+}
+.contact_platform{
+    text-align: center;
+    margin: 50px;
+}
+.contact_info{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contact_platform a{
+    margin: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 8px;
+}
+.contact_platform a i{
+    width: 40px;
+    background-color: #fff;
+    color: black;
+    padding: 10px 5px;
+    border-radius: 50%;
+}
+.contact_platform a i:hover{
+    background-color: #5a69ee;
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding: 30px;   
+}
+.copyright span{
+    color: #a1a1f1;
+}

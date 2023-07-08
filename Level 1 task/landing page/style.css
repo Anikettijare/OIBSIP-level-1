@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+/* CSS applied to Header and Navigation Menu */
+header{
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #5b5757;
+    padding: 20px;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    position: relative;
+}
+.navbar ul li::before{
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #f44949;
+    content: "";
+    opacity: 0;
+    transition: 0.8s;
+}
+.navbar ul li:hover::before{
+    opacity: 1;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 20px;
+}
+.navbar ul li:last-child{
+    background-image: linear-gradient(to right,  #ee8425 30%, #f9488b 100%);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+.mobile_menu i{
+    font-size: 25px;
+    display: none;
+}
+.navbar ul li img{
+    position: relative;
+    width: 50px;
+    display: none;
+    top: -380px;
+}
+/* CSS applied to Home_section */
+.home_section{
+    background-image: url('images/hero.jpg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.hero_text{
+    width: 500px;
+}
+.hero_text span{
+    font-size: 17px;
+    color: #f44949;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero_text h2{
+    font-size: 48px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.hero_text a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+}
+.hero_image img{
+    width: 100%;
+}
+@media (max-width:900px) {
+    .mobile_menu i{
+        display: block;
+    }
+    .hero_section{
+        padding-top: 140px;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 20px;
+    }
+    .navbar ul li img{
+        display: block;
+    }
+    .navbar{
+        gap: 150px;
+    }
+    .navbar ul{
+        width: 100vw;
+        background-color: #5b5757;
+        transition: 0.5s;
+        z-index: 2;
+        padding: 20px;
+        position: fixed;
+        top: -700px;
+        left: 0px;
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width:500px) {
+    .hero_text {
+        width: 310px;
+    }
+}
